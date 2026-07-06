@@ -70,7 +70,7 @@ export function Hero() {
         </FadeIn>
 
         <h1 className="font-display mt-6 max-w-4xl text-5xl leading-[1.05] tracking-tight text-balance sm:text-6xl md:text-7xl lg:text-8xl">
-          <TextReveal text={t("heading")} as="h1" />
+          <TextReveal text={t("heading")} as="span" />
         </h1>
 
         <FadeIn delay={0.5} className="mt-6 max-w-xl">

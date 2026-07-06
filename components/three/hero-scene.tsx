@@ -15,7 +15,7 @@ export function HeroScene() {
   if (reducedMotion) return null;
 
   return (
-    <div className="absolute inset-0 -z-10" aria-hidden="true">
+    <div className="pointer-events-none absolute inset-0 z-[5]" aria-hidden="true">
       {!isSmallViewport && <Scene />}
     </div>
   );

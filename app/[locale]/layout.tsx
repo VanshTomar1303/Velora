@@ -46,7 +46,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} dir={dir} className="dark" suppressHydrationWarning>
-      <body className={`${fontSans.variable} ${fontDisplay.variable} font-sans`}>
+      <body className={`${fontSans.variable} ${fontDisplay.variable} font-sans`} suppressHydrationWarning>
         <Script
           id="ld-json-business"
           type="application/ld+json"
