@@ -1,0 +1,201 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #0a0908;
+  --foreground: #f5f1e8;
+  --card: #131110;
+  --card-foreground: #f5f1e8;
+  --popover: #131110;
+  --popover-foreground: #f5f1e8;
+  --primary: #d4af37;
+  --primary-foreground: #0a0908;
+  --secondary: #2a211a;
+  --secondary-foreground: #f5f1e8;
+  --muted: #1c1815;
+  --muted-foreground: #a89a86;
+  --accent: #e8734a;
+  --accent-foreground: #0a0908;
+  --destructive: #e5484d;
+  --border: #262019;
+  --input: #262019;
+  --ring: #d4af37;
+
+  --cream: #f3ead9;
+  --gold: #d4af37;
+  --orange: #e8734a;
+  --brown: #6b4a34;
+  --light-gray: #b8afa3;
+
+  --radius: 0.75rem;
+
+  --font-display: var(--font-playfair);
+  --font-sans: var(--font-inter);
+}
+
+.light {
+  --background: #faf7f2;
+  --foreground: #1a1512;
+  --card: #ffffff;
+  --card-foreground: #1a1512;
+  --popover: #ffffff;
+  --popover-foreground: #1a1512;
+  --primary: #b8892f;
+  --primary-foreground: #faf7f2;
+  --secondary: #f0e8d8;
+  --secondary-foreground: #1a1512;
+  --muted: #efe7da;
+  --muted-foreground: #6b6055;
+  --accent: #d4622f;
+  --accent-foreground: #faf7f2;
+  --destructive: #d13438;
+  --border: #e4dbca;
+  --input: #e4dbca;
+  --ring: #b8892f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-cream: var(--cream);
+  --color-gold: var(--gold);
+  --color-orange: var(--orange);
+  --color-brown: var(--brown);
+  --color-light-gray: var(--light-gray);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 40s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-shimmer: shimmer 2.5s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes marquee-reverse {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-16px) rotate(3deg);
+    }
+  }
+  @keyframes shimmer {
+    from {
+      background-position: 0% 0%;
+    }
+    to {
+      background-position: 200% 0%;
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: auto;
+    color-scheme: dark;
+  }
+  html.light {
+    color-scheme: light;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    overflow-x: hidden;
+  }
+  ::selection {
+    background: var(--gold);
+    color: var(--background);
+  }
+  :focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .glass {
+    background: color-mix(in oklab, var(--card) 55%, transparent);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid color-mix(in oklab, var(--foreground) 8%, transparent);
+  }
+  .text-gradient-gold {
+    background: linear-gradient(
+      90deg,
+      var(--gold),
+      var(--cream) 45%,
+      var(--gold)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+[dir="rtl"] .flip-rtl {
+  transform: scaleX(-1);
+}

@@ -1,0 +1,6 @@
+[
+  { "id": "t-01", "name": "Isabella Moreau", "role": "Executive Chef", "bio": "Trained in Lyon and Tokyo, Isabella leads Velora's kitchen with a philosophy of quiet precision.", "social": { "instagram": "#", "linkedin": "#" } },
+  { "id": "t-02", "name": "Noah Whitfield", "role": "Head Barista", "bio": "Multiple regional latte-art champion obsessed with single-origin sourcing.", "social": { "instagram": "#", "twitter": "#" } },
+  { "id": "t-03", "name": "Yuki Tanaka", "role": "Pastry Chef", "bio": "Blends French technique with Japanese minimalism in every dessert on the menu.", "social": { "instagram": "#" } },
+  { "id": "t-04", "name": "Camila Duarte", "role": "General Manager", "bio": "Ensures every guest experience feels effortless, from reservation to farewell.", "social": { "linkedin": "#" } }
+]

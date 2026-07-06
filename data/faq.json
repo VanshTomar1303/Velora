@@ -1,0 +1,8 @@
+[
+  { "id": "f-01", "question": "Do I need a reservation to dine at Velora?", "answer": "Walk-ins are welcome, but we recommend reserving a table in advance, especially for evening service and weekends." },
+  { "id": "f-02", "question": "Is delivery and pickup ordering available?", "answer": "Yes — browse the full menu, add items to your cart, and check out for pickup or delivery directly from the Menu page." },
+  { "id": "f-03", "question": "Do you accommodate dietary restrictions?", "answer": "Absolutely. Vegetarian options are marked across the menu, and our team can accommodate most allergies and preferences with advance notice." },
+  { "id": "f-04", "question": "What are your opening hours?", "answer": "We're open seven days a week — see the full breakdown in the Contact section below." },
+  { "id": "f-05", "question": "Can I host a private event at Velora?", "answer": "Yes, our private dining space accommodates up to 24 guests. Reach out via the contact form for availability." },
+  { "id": "f-06", "question": "Is parking available nearby?", "answer": "Complimentary valet is available during dinner service, with public parking available a short walk away." }
+]

@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "title": "VELORA — Crafted for the Modern Taste",
+    "description": "Velora is a premium cafe and restaurant blending specialty coffee, seasonal dining, and cinematic ambience for the modern generation."
+  },
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "gallery": "Gallery",
+    "about": "About",
+    "reviews": "Reviews",
+    "reservations": "Reservations",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "loading": {
+    "brewing": "Brewing something special",
+    "plating": "Plating the details",
+    "setting": "Setting the table",
+    "ready": "Welcome to Velora"
+  },
+  "hero": {
+    "eyebrow": "Velora — Est. 2014",
+    "heading": "Crafted for the Modern Taste",
+    "subheading": "A cinematic cafe & dining experience where specialty coffee, seasonal plates, and warm hospitality meet.",
+    "reserveTable": "Reserve Table",
+    "orderOnline": "Order Online",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "eyebrow": "Our Story",
+    "heading": "A decade of quiet obsession with craft",
+    "story": "Velora began as a single espresso counter in 2014, built on a simple belief: hospitality is a craft, not a transaction. Today it has grown into a full culinary destination, but the founding obsession with detail hasn't changed.",
+    "missionTitle": "Our Mission",
+    "mission": "To create a space where exceptional taste and genuine warmth coexist — every visit, every order, every plate.",
+    "valuesTitle": "What We Value",
+    "values": [
+      { "title": "Craft", "description": "Every recipe is refined obsessively before it reaches your table." },
+      { "title": "Sourcing", "description": "Direct relationships with growers and farms across every ingredient." },
+      { "title": "Warmth", "description": "Genuine hospitality that never feels performative." }
+    ],
+    "timelineTitle": "Our Journey",
+    "timeline": [
+      { "year": "2014", "title": "First counter opens", "description": "A single espresso bar in a 12-seat space." },
+      { "year": "2017", "title": "Kitchen expands", "description": "Full dining menu launches alongside the original cafe." },
+      { "year": "2021", "title": "Second location", "description": "Velora opens its first branch beyond the flagship." },
+      { "year": "2026", "title": "Digital ordering", "description": "Reservations and ordering go fully online for every guest." }
+    ],
+    "statsYears": "Years of Craft",
+    "statsCustomers": "Happy Guests",
+    "statsAwards": "Awards Won",
+    "statsEmployees": "Team Members"
+  },
+  "services": {
+    "eyebrow": "What We Offer",
+    "heading": "One space, every ritual",
+    "subheading": "From your morning espresso to an evening tasting menu, Velora is built to adapt to every occasion."
+  },
+  "menu": {
+    "eyebrow": "The Menu",
+    "heading": "Digitally crafted, beautifully served",
+    "subheading": "Browse by category, filter to your taste, and order straight to your table or door.",
+    "searchPlaceholder": "Search the menu",
+    "categories": {
+      "all": "All",
+      "coffee": "Coffee",
+      "tea": "Tea",
+      "desserts": "Desserts",
+      "breakfast": "Breakfast",
+      "lunch": "Lunch",
+      "dinner": "Dinner",
+      "drinks": "Drinks",
+      "cocktails": "Cocktails"
+    },
+    "addToCart": "Add",
+    "added": "Added",
+    "calories": "cal",
+    "noResults": "No dishes match your search.",
+    "viewFullMenu": "View Full Menu",
+    "popular": "Popular"
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "heading": "A look inside Velora",
+    "subheading": "Moments from the counter, the kitchen, and the tables in between.",
+    "categories": {
+      "all": "All",
+      "interior": "Interior",
+      "food": "Food",
+      "coffee": "Coffee",
+      "cocktails": "Cocktails"
+    },
+    "close": "Close",
+    "playVideo": "Play video"
+  },
+  "reviews": {
+    "eyebrow": "Testimonials",
+    "heading": "Loved by guests worldwide",
+    "subheading": "Real words from the people who keep coming back."
+  },
+  "team": {
+    "eyebrow": "Our Team",
+    "heading": "The people behind every plate"
+  },
+  "stats": {
+    "years": "Years of Craft",
+    "customers": "Happy Customers",
+    "orders": "Orders Served",
+    "awards": "Awards Won",
+    "branches": "Branches"
+  },
+  "process": {
+    "eyebrow": "How It Works",
+    "heading": "From craving to table in four steps",
+    "steps": [
+      { "title": "Choose", "description": "Browse the digital menu and pick exactly what you're craving." },
+      { "title": "Reserve", "description": "Book your table or schedule pickup in under a minute." },
+      { "title": "Enjoy", "description": "Settle in — we'll handle every detail of the experience." },
+      { "title": "Review", "description": "Tell us how it went. We read every word." }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "heading": "Good to know",
+    "subheading": "Answers to the questions we hear most often."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "We'd love to hear from you",
+    "subheading": "Questions, private events, or feedback — reach out any time.",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent — we'll be in touch shortly."
+    },
+    "hoursTitle": "Opening Hours",
+    "addressTitle": "Location",
+    "phoneTitle": "Phone",
+    "emailTitle": "Email",
+    "mapPlaceholder": "Map"
+  },
+  "reservations": {
+    "eyebrow": "Reservations",
+    "heading": "Reserve your table",
+    "subheading": "Tell us when you'd like to visit and we'll take care of the rest.",
+    "form": {
+      "name": "Full name",
+      "phone": "Phone number",
+      "email": "Email address",
+      "guests": "Number of guests",
+      "date": "Date",
+      "time": "Time",
+      "notes": "Special requests",
+      "notesPlaceholder": "Allergies, celebrations, seating preferences...",
+      "submit": "Confirm Reservation",
+      "submitting": "Confirming..."
+    },
+    "successTitle": "You're all set",
+    "successCopy": "A confirmation has been sent to your email. We can't wait to host you.",
+    "confirmationNumber": "Confirmation",
+    "close": "Close"
+  },
+  "cart": {
+    "title": "Your Cart",
+    "empty": "Your cart is empty. Add something delicious from the menu.",
+    "items": "items",
+    "couponPlaceholder": "Coupon code",
+    "apply": "Apply",
+    "invalidCoupon": "That code isn't valid.",
+    "couponApplied": "Coupon {code} applied.",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "tax": "Tax",
+    "delivery": "Delivery",
+    "total": "Total",
+    "checkout": "Checkout",
+    "placingOrder": "Placing order...",
+    "orderPlaced": "Order placed!",
+    "orderPlacedCopy": "Thank you — your order is being prepared."
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "instagram": "Instagram",
+    "newsletter": "Newsletter",
+    "newsletterCopy": "Menu drops, events, and offers — straight to your inbox.",
+    "emailPlaceholder": "Your email",
+    "subscribe": "Subscribe",
+    "newsletterSuccess": "You're subscribed. Welcome to Velora.",
+    "rights": "All rights reserved."
+  }
+}

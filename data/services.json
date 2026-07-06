@@ -1,0 +1,10 @@
+[
+  { "id": "s-01", "icon": "Coffee", "title": "Cafe", "description": "Specialty coffee crafted from ethically sourced single-origin beans." },
+  { "id": "s-02", "icon": "UtensilsCrossed", "title": "Restaurant", "description": "Seasonal fine dining with a menu that evolves with the harvest." },
+  { "id": "s-03", "icon": "Scissors", "title": "Salon", "description": "Precision styling in a calm, considered space." },
+  { "id": "s-04", "icon": "Flower2", "title": "Spa", "description": "Restorative treatments designed around slowness and ritual." },
+  { "id": "s-05", "icon": "Sparkles", "title": "Massage", "description": "Therapeutic massage from certified practitioners." },
+  { "id": "s-06", "icon": "Wand2", "title": "Hair Styling", "description": "Editorial-grade styling for every occasion." },
+  { "id": "s-07", "icon": "Gem", "title": "Facial", "description": "Skin-first facials using clean, clinically backed formulations." },
+  { "id": "s-08", "icon": "IceCreamCone", "title": "Desserts", "description": "Pastry crafted daily in-house by our dessert atelier." }
+]

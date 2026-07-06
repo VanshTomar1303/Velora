@@ -1,0 +1,10 @@
+[
+  { "id": "r-01", "name": "Amara Chen", "country": "Singapore", "rating": 5, "text": "Every detail feels intentional — from the lighting to the last bite of dessert. Velora is unmatched.", "date": "2026-05-12" },
+  { "id": "r-02", "name": "Lucas Bennett", "country": "United Kingdom", "rating": 5, "text": "The espresso martini alone is worth the trip. Service was warm and effortlessly polished.", "date": "2026-04-28" },
+  { "id": "r-03", "name": "Sofia Marques", "country": "Portugal", "rating": 5, "text": "Booked a table for two, stayed for four hours. The ambience is genuinely cinematic.", "date": "2026-04-02" },
+  { "id": "r-04", "name": "Kenji Watanabe", "country": "Japan", "rating": 4, "text": "Exceptional attention to craft. The matcha rivals anything I've had in Kyoto.", "date": "2026-03-19" },
+  { "id": "r-05", "name": "Priya Nair", "country": "India", "rating": 5, "text": "Reservation system was seamless and the staff remembered our order preferences on our return visit.", "date": "2026-02-27" },
+  { "id": "r-06", "name": "Marco Rossi", "country": "Italy", "rating": 5, "text": "As an Italian, I'm particular about espresso. Velora's signature shot genuinely surprised me.", "date": "2026-01-15" },
+  { "id": "r-07", "name": "Emma Rousseau", "country": "France", "rating": 4, "text": "Beautiful plating, thoughtful pacing, and a wine list that actually complements the menu.", "date": "2025-12-30" },
+  { "id": "r-08", "name": "Daniel Osei", "country": "Ghana", "rating": 5, "text": "The kind of place that makes an ordinary Tuesday feel like an occasion.", "date": "2025-12-08" }
+]

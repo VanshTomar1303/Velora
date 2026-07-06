@@ -1,0 +1,35 @@
+{
+  "brand": "VELORA",
+  "tagline": "Crafted for the Modern Taste",
+  "description": "Velora is a premium cafe and restaurant blending specialty coffee, seasonal dining, and cinematic ambience for the modern generation.",
+  "email": "hello@velora.com",
+  "phone": "+1 (415) 555-0192",
+  "address": "128 Marigold Avenue, San Francisco, CA 94110",
+  "whatsapp": "+14155550192",
+  "social": {
+    "instagram": "https://instagram.com",
+    "facebook": "https://facebook.com",
+    "twitter": "https://twitter.com",
+    "tiktok": "https://tiktok.com"
+  },
+  "hours": [
+    { "day": "Monday – Thursday", "hours": "8:00 AM – 10:00 PM" },
+    { "day": "Friday – Saturday", "hours": "8:00 AM – 12:00 AM" },
+    { "day": "Sunday", "hours": "9:00 AM – 9:00 PM" }
+  ],
+  "stats": {
+    "years": 12,
+    "customers": 480000,
+    "awards": 27,
+    "employees": 64,
+    "branches": 9,
+    "orders": 1250000
+  },
+  "map": {
+    "lat": 37.7599,
+    "lng": -122.4148
+  },
+  "taxRate": 0.0875,
+  "deliveryFee": 4.99,
+  "currency": "USD"
+}
