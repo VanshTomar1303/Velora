@@ -68,4 +68,60 @@ export function businessJsonLd() {
   };
 }
 
+export function articleJsonLd({
+  title,
+  description,
+  author,
+  date,
+  path,
+}: {
+  title: string;
+  description: string;
+  author: string;
+  date: string;
+  path: string;
+}) {
+  const settings = getSettingsSync();
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    author: { "@type": "Person", name: author },
+    datePublished: date,
+    publisher: { "@type": "Organization", name: settings.brand },
+    mainEntityOfPage: `${siteUrl}${path}`,
+  };
+}
+
+export function productJsonLd({
+  name,
+  description,
+  price,
+  path,
+  currency = "USD",
+}: {
+  name: string;
+  description: string;
+  price: number;
+  path: string;
+  currency?: string;
+}) {
+  const settings = getSettingsSync();
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name,
+    description,
+    brand: { "@type": "Brand", name: settings.brand },
+    offers: {
+      "@type": "Offer",
+      price,
+      priceCurrency: currency,
+      availability: "https://schema.org/InStock",
+      url: `${siteUrl}${path}`,
+    },
+  };
+}
+
 export { siteUrl };

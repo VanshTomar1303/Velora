@@ -30,9 +30,12 @@ export function Hero() {
   return (
     <section className="relative flex h-screen min-h-[720px] w-full items-center justify-center overflow-hidden">
       <MediaPlaceholder
-        type="video"
+        type="image"
         ratio="square"
-        label="Cinematic background video"
+        src="/images/hero-interior.jpg"
+        label="Velora dining room"
+        priority
+        sizes="100vw"
         className="absolute inset-0 h-full w-full scale-105 rounded-none"
       />
 

@@ -15,6 +15,7 @@ export interface MenuItem {
   description: string;
   price: number;
   calories: number;
+  image?: string;
   tags?: string[];
   popular?: boolean;
   vegetarian?: boolean;

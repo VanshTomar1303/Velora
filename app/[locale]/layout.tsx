@@ -8,7 +8,6 @@ import { routing, rtlLocales, type Locale } from "@/i18n/routing";
 import { Providers } from "@/components/layout/providers";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
-import { PageTransition } from "@/components/layout/page-transition";
 import { businessJsonLd, siteUrl } from "@/lib/seo";
 import "@/styles/globals.css";
 
@@ -53,12 +52,16 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(businessJsonLd()) }}
         />
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] focus:rounded-full focus:bg-primary focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-primary-foreground"
+        >
+          Skip to content
+        </a>
         <NextIntlClientProvider>
           <Providers>
             <Navbar />
-            <PageTransition>
-              <main id="main-content">{children}</main>
-            </PageTransition>
+            <main id="main-content">{children}</main>
             <Footer />
           </Providers>
         </NextIntlClientProvider>

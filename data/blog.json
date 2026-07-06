@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "the-art-of-the-perfect-espresso",
+    "title": "The Art of the Perfect Espresso",
+    "excerpt": "Nine grams, twenty-five seconds, and a decade of obsession. Here is how our baristas chase the perfect shot every single morning.",
+    "body": [
+      "At Velora, espresso is not a drink — it is a discipline. Every morning before the doors open, our lead baristas pull a calibration shot, taste it, and adjust the grind by fractions of a millimetre until the extraction sings.",
+      "The variables are relentless: humidity shifts the grind, the roast date changes the crema, and even the temperature of the portafilter matters. We weigh the dose to a tenth of a gram and time the pour to the second.",
+      "The result is a shot with a dense, hazelnut crema and a sweetness that needs no sugar. It is the foundation of nearly everything we serve, from the Golden Hour Latte to the Espresso Martini our guests keep coming back for.",
+      "Next time you visit, ask your barista what origin is on the bar this week. The answer changes with the seasons — and so does the story in your cup."
+    ],
+    "author": "Amara Chen",
+    "date": "2026-06-18",
+    "category": "Coffee",
+    "readingTime": 4,
+    "image": "/images/detail-1.jpg"
+  },
+  {
+    "slug": "designing-a-cinematic-dining-room",
+    "title": "Designing a Cinematic Dining Room",
+    "excerpt": "Lighting, texture, and pacing — the quiet design choices that make an ordinary Tuesday evening at Velora feel like an occasion.",
+    "body": [
+      "People often ask why Velora feels different the moment they walk in. The honest answer is that we design the room the way a director designs a scene — with intention behind every source of light.",
+      "We use warm, low pools of light rather than a flat wash, so each table becomes its own small stage. Textures are layered: brushed brass, aged oak, and soft linen that absorbs sound and softens conversation.",
+      "Pacing matters too. The music rises gently through the evening, the lighting dims by degrees, and the service rhythm slows so guests never feel rushed. None of it is accidental.",
+      "Great hospitality is invisible. You should never notice the design working — you should only notice that you never wanted to leave."
+    ],
+    "author": "Sofia Marques",
+    "date": "2026-05-30",
+    "category": "Design",
+    "readingTime": 5,
+    "image": "/images/interior-1.jpg"
+  },
+  {
+    "slug": "sourcing-with-intention",
+    "title": "Sourcing With Intention",
+    "excerpt": "From single-origin beans to seasonal produce, why direct relationships with growers change everything on the plate.",
+    "body": [
+      "The shortest path to a better plate is a better ingredient, and the shortest path to a better ingredient is knowing the person who grew it.",
+      "We buy our coffee directly from a handful of farms we visit each year, paying above market so the growers can invest in quality. Our produce comes from regional partners who harvest to order rather than to a warehouse.",
+      "This is slower and more expensive than a distributor, but it means our menu changes with what is genuinely at its peak. A dish appears when the ingredient is ready, not when a spreadsheet says so.",
+      "Intentional sourcing is the least visible thing we do and the one that matters most. It is the difference between food that is merely good and food that tastes like somewhere real."
+    ],
+    "author": "Marco Rossi",
+    "date": "2026-05-08",
+    "category": "Kitchen",
+    "readingTime": 4,
+    "image": "/images/detail-3.jpg"
+  },
+  {
+    "slug": "seasonal-menu-summer-edition",
+    "title": "Seasonal Menu: Summer Edition",
+    "excerpt": "Charred citrus, stone fruit, and cold brew reimagined — a first look at the plates and pours arriving this season.",
+    "body": [
+      "Summer at Velora is bright, acidic, and unapologetically fresh. As the market shifts, so does the menu, and this season leans into charred citrus and ripe stone fruit.",
+      "On the food side, look for the Charred Citrus Salmon Bowl and a new stone-fruit burrata that has quietly become the most-ordered starter on the pass.",
+      "Behind the bar, cold brew gets a summer makeover with a house tonic and citrus oils, while the Rose Yuzu Spritz returns for its third year by popular demand.",
+      "Menus like this are a snapshot of a moment. Come taste it before the season turns and the kitchen moves on to the next one."
+    ],
+    "author": "Kenji Watanabe",
+    "date": "2026-04-21",
+    "category": "Menu",
+    "readingTime": 3,
+    "image": "/images/menu-salmon.jpg"
+  }
+]

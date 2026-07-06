@@ -35,16 +35,41 @@
     "mission": "To create a space where exceptional taste and genuine warmth coexist — every visit, every order, every plate.",
     "valuesTitle": "What We Value",
     "values": [
-      { "title": "Craft", "description": "Every recipe is refined obsessively before it reaches your table." },
-      { "title": "Sourcing", "description": "Direct relationships with growers and farms across every ingredient." },
-      { "title": "Warmth", "description": "Genuine hospitality that never feels performative." }
+      {
+        "title": "Craft",
+        "description": "Every recipe is refined obsessively before it reaches your table."
+      },
+      {
+        "title": "Sourcing",
+        "description": "Direct relationships with growers and farms across every ingredient."
+      },
+      {
+        "title": "Warmth",
+        "description": "Genuine hospitality that never feels performative."
+      }
     ],
     "timelineTitle": "Our Journey",
     "timeline": [
-      { "year": "2014", "title": "First counter opens", "description": "A single espresso bar in a 12-seat space." },
-      { "year": "2017", "title": "Kitchen expands", "description": "Full dining menu launches alongside the original cafe." },
-      { "year": "2021", "title": "Second location", "description": "Velora opens its first branch beyond the flagship." },
-      { "year": "2026", "title": "Digital ordering", "description": "Reservations and ordering go fully online for every guest." }
+      {
+        "year": "2014",
+        "title": "First counter opens",
+        "description": "A single espresso bar in a 12-seat space."
+      },
+      {
+        "year": "2017",
+        "title": "Kitchen expands",
+        "description": "Full dining menu launches alongside the original cafe."
+      },
+      {
+        "year": "2021",
+        "title": "Second location",
+        "description": "Velora opens its first branch beyond the flagship."
+      },
+      {
+        "year": "2026",
+        "title": "Digital ordering",
+        "description": "Reservations and ordering go fully online for every guest."
+      }
     ],
     "statsYears": "Years of Craft",
     "statsCustomers": "Happy Guests",
@@ -91,7 +116,12 @@
       "cocktails": "Cocktails"
     },
     "close": "Close",
-    "playVideo": "Play video"
+    "playVideo": "Play video",
+    "filters": {
+      "all": "All media",
+      "images": "Images",
+      "videos": "Videos"
+    }
   },
   "reviews": {
     "eyebrow": "Testimonials",
@@ -113,10 +143,22 @@
     "eyebrow": "How It Works",
     "heading": "From craving to table in four steps",
     "steps": [
-      { "title": "Choose", "description": "Browse the digital menu and pick exactly what you're craving." },
-      { "title": "Reserve", "description": "Book your table or schedule pickup in under a minute." },
-      { "title": "Enjoy", "description": "Settle in — we'll handle every detail of the experience." },
-      { "title": "Review", "description": "Tell us how it went. We read every word." }
+      {
+        "title": "Choose",
+        "description": "Browse the digital menu and pick exactly what you're craving."
+      },
+      {
+        "title": "Reserve",
+        "description": "Book your table or schedule pickup in under a minute."
+      },
+      {
+        "title": "Enjoy",
+        "description": "Settle in — we'll handle every detail of the experience."
+      },
+      {
+        "title": "Review",
+        "description": "Tell us how it went. We read every word."
+      }
     ]
   },
   "faq": {
@@ -190,6 +232,161 @@
     "emailPlaceholder": "Your email",
     "subscribe": "Subscribe",
     "newsletterSuccess": "You're subscribed. Welcome to Velora.",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "columns": {
+      "explore": "Explore",
+      "company": "Company",
+      "legal": "Legal"
+    },
+    "links": {
+      "menu": "Menu",
+      "gallery": "Gallery",
+      "blog": "Journal",
+      "testimonials": "Testimonials",
+      "locations": "Locations",
+      "offers": "Offers",
+      "referral": "Referral",
+      "partners": "Partners",
+      "about": "About",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "cookies": "Cookies Policy",
+      "terms": "Terms & Conditions"
+    }
+  },
+  "cookieBanner": {
+    "title": "Cookie preferences",
+    "message": "We use cookies to enhance your experience, analyse traffic, and remember your preferences.",
+    "learnMore": "Learn more",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "legal": {
+    "eyebrow": "Legal",
+    "lastUpdated": "Last updated",
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How Velora collects, uses, and protects your personal information."
+    },
+    "cookies": {
+      "title": "Cookies Policy",
+      "description": "How and why Velora uses cookies across our website."
+    },
+    "terms": {
+      "title": "Terms & Conditions",
+      "description": "The terms that govern your use of Velora's website and services."
+    }
+  },
+  "feedback": {
+    "eyebrow": "Feedback & Ratings",
+    "heading": "Tell us how we did",
+    "subheading": "Your feedback shapes every detail of the Velora experience. Read what guests say, then share your own.",
+    "basedOn": "Based on {count} guest ratings",
+    "testimonialsTitle": "What guests are saying",
+    "formTitle": "Leave your feedback",
+    "success": "Thank you — your feedback has been received.",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "rating": "Your rating",
+      "comment": "Your feedback",
+      "commentPlaceholder": "Tell us about your visit...",
+      "submit": "Submit Feedback"
+    }
+  },
+  "product": {
+    "backToMenu": "Back to menu",
+    "vegetarian": "Vegetarian",
+    "spicy": "Spicy",
+    "related": "You may also like"
+  },
+  "blog": {
+    "eyebrow": "The Journal",
+    "heading": "Stories from behind the counter",
+    "subheading": "Notes on coffee, craft, design, and the people who make Velora what it is.",
+    "readingTime": "{minutes} min read",
+    "readMore": "Read more",
+    "backToBlog": "Back to journal",
+    "by": "By {author}"
+  },
+  "offers": {
+    "eyebrow": "Offers",
+    "heading": "Little rewards, often",
+    "subheading": "Seasonal offers and codes to make every visit a little sweeter.",
+    "validUntil": "Valid until",
+    "copy": "Copy code",
+    "copied": "Code {code} copied to clipboard.",
+    "copyError": "Couldn't copy the code — please try again."
+  },
+  "referral": {
+    "eyebrow": "Referral Scheme",
+    "heading": "Share Velora, earn rewards",
+    "subheading": "Invite a friend to Velora and you'll both enjoy a reward on your next visit.",
+    "steps": [
+      {
+        "title": "Invite a friend",
+        "description": "Share your referral with someone who loves great coffee and dining."
+      },
+      {
+        "title": "They join us",
+        "description": "Your friend makes their first reservation or order at Velora."
+      },
+      {
+        "title": "You both earn",
+        "description": "You each receive a reward to enjoy on your next visit."
+      }
+    ],
+    "formTitle": "Refer a friend",
+    "formSubtitle": "Enter your details and your friend's email — we'll take care of the rest.",
+    "success": "Your referral is on its way. Thank you for sharing Velora!",
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "friendEmail": "Friend's email",
+      "submit": "Send Referral"
+    }
+  },
+  "partners": {
+    "eyebrow": "Partnership Programme",
+    "heading": "Let's build something together",
+    "subheading": "From suppliers to spaces, we partner with people who share our obsession with quality.",
+    "types": [
+      {
+        "title": "Corporate",
+        "description": "Catering, gifting, and office coffee programmes for teams of any size."
+      },
+      {
+        "title": "Suppliers",
+        "description": "Growers, roasters, and producers who meet our sourcing standards."
+      },
+      {
+        "title": "Sustainability",
+        "description": "Partners helping us reduce waste and source more responsibly."
+      },
+      {
+        "title": "Franchise",
+        "description": "Bring the Velora experience to a new city with our support."
+      }
+    ],
+    "formTitle": "Become a partner",
+    "formSubtitle": "Tell us about your organisation and how you'd like to work together.",
+    "success": "Thanks — our partnerships team will be in touch soon.",
+    "form": {
+      "company": "Company name",
+      "contact": "Contact name",
+      "email": "Email address",
+      "type": "Partnership type",
+      "typePlaceholder": "Select a type",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your organisation and goals...",
+      "submit": "Submit Application"
+    }
+  },
+  "locations": {
+    "eyebrow": "Locations",
+    "heading": "Find your nearest Velora",
+    "subheading": "Nine locations and counting, each with the same obsession with craft and hospitality.",
+    "flagship": "Flagship",
+    "directions": "Get directions"
   }
 }

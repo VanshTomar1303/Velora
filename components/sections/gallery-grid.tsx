@@ -10,16 +10,22 @@ import { Button } from "@/components/ui/button";
 import { useLockBody } from "@/hooks/use-lock-body";
 
 const CATEGORIES = ["all", "interior", "food", "coffee", "cocktails"] as const;
+const MEDIA_TYPES = ["all", "images", "videos"] as const;
 
 export function GalleryGrid({ items, limit }: { items: GalleryItem[]; limit?: number }) {
   const t = useTranslations("gallery");
   const [category, setCategory] = useState<(typeof CATEGORIES)[number]>("all");
+  const [media, setMedia] = useState<(typeof MEDIA_TYPES)[number]>("all");
   const [active, setActive] = useState<GalleryItem | null>(null);
 
   const filtered = useMemo(() => {
-    const result = category === "all" ? items : items.filter((item) => item.category === category);
+    let result = category === "all" ? items : items.filter((item) => item.category === category);
+    if (media !== "all") {
+      const type = media === "videos" ? "video" : "image";
+      result = result.filter((item) => item.type === type);
+    }
     return limit ? result.slice(0, limit) : result;
-  }, [items, category, limit]);
+  }, [items, category, media, limit]);
 
   return (
     <div>
@@ -34,6 +40,21 @@ export function GalleryGrid({ items, limit }: { items: GalleryItem[]; limit?: nu
             data-cursor-hover
           >
             {t(`categories.${c}`)}
+          </Button>
+        ))}
+      </div>
+
+      <div className="mt-3 flex flex-wrap justify-center gap-2">
+        {MEDIA_TYPES.map((m) => (
+          <Button
+            key={m}
+            size="sm"
+            variant={media === m ? "secondary" : "ghost"}
+            onClick={() => setMedia(m)}
+            className="rounded-full text-xs"
+            data-cursor-hover
+          >
+            {t(`filters.${m}`)}
           </Button>
         ))}
       </div>
@@ -53,6 +74,7 @@ export function GalleryGrid({ items, limit }: { items: GalleryItem[]; limit?: nu
           >
             <MediaPlaceholder
               type={item.type}
+              src={item.image}
               label={item.title}
               className="rounded-xl transition-transform duration-500 group-hover:scale-105"
               style={{ aspectRatio: `${item.width} / ${item.height}` }}
@@ -95,7 +117,7 @@ function GalleryModalContent({ item, onClose, label }: { item: GalleryItem; onCl
       transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
       onClick={(e) => e.stopPropagation()}
     >
-      <MediaPlaceholder type={item.type} label={item.title} className="w-full rounded-2xl" ratio="wide" />
+      <MediaPlaceholder type={item.type} src={item.image} label={item.title} className="w-full rounded-2xl" ratio="wide" />
       <Button
         variant="secondary"
         size="icon"

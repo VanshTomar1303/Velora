@@ -3,6 +3,7 @@ export interface TeamMember {
   name: string;
   role: string;
   bio: string;
+  image?: string;
   social: {
     instagram?: string;
     twitter?: string;

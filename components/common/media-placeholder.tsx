@@ -1,4 +1,5 @@
-import { ImageOff, Video as VideoIcon } from "lucide-react";
+import Image from "next/image";
+import { ImageOff, Video as VideoIcon, Play } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface MediaPlaceholderProps {
@@ -7,6 +8,9 @@ interface MediaPlaceholderProps {
   label?: string;
   ratio?: "square" | "portrait" | "landscape" | "wide";
   style?: React.CSSProperties;
+  src?: string;
+  priority?: boolean;
+  sizes?: string;
 }
 
 const ratioClass: Record<Required<MediaPlaceholderProps>["ratio"], string> = {
@@ -17,12 +21,43 @@ const ratioClass: Record<Required<MediaPlaceholderProps>["ratio"], string> = {
 };
 
 /**
- * Stands in for real photography/video (none provided yet). Swap by
- * replacing the call site with next/image or a <video> element — the
- * surrounding layout classes are designed to carry over unchanged.
+ * Renders a real photo via next/image when `src` is provided. Falls back to
+ * a gradient placeholder otherwise (no asset supplied yet for that slot).
  */
-export function MediaPlaceholder({ className, type = "image", label, ratio = "square", style }: MediaPlaceholderProps) {
+export function MediaPlaceholder({
+  className,
+  type = "image",
+  label,
+  ratio = "square",
+  style,
+  src,
+  priority,
+  sizes = "(min-width: 1024px) 33vw, 100vw",
+}: MediaPlaceholderProps) {
   const Icon = type === "video" ? VideoIcon : ImageOff;
+
+  if (src) {
+    return (
+      <div
+        className={cn(ratioClass[ratio], "relative overflow-hidden rounded-lg bg-muted", className)}
+        style={style}
+      >
+        <Image
+          src={src}
+          alt={label ?? ""}
+          fill
+          sizes={sizes}
+          priority={priority}
+          className="object-cover"
+        />
+        {type === "video" && (
+          <span className="absolute inset-0 flex items-center justify-center bg-black/20">
+            <Play className="size-8 fill-white text-white" aria-hidden="true" />
+          </span>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div

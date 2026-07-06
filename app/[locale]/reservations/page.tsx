@@ -39,7 +39,7 @@ export default async function ReservationsPage({
             <p className="mt-4 max-w-md text-muted-foreground">{t("subheading")}</p>
           </FadeIn>
           <SlideUp delay={0.3} className="mt-8">
-            <MediaPlaceholder ratio="portrait" label="Dining room" className="w-full max-w-md rounded-2xl" />
+            <MediaPlaceholder ratio="portrait" src="/images/interior-4.jpg" label="Dining room" className="w-full max-w-md rounded-2xl" />
           </SlideUp>
         </div>
 

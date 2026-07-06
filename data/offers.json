@@ -1,0 +1,38 @@
+[
+  {
+    "id": "off-01",
+    "title": "Weekday Brunch for Two",
+    "description": "Two brunch plates and two specialty coffees, served every weekday before noon. The perfect slow start to the day.",
+    "discount": "25% OFF",
+    "code": "BRUNCH25",
+    "validUntil": "2026-12-31",
+    "tag": "Popular"
+  },
+  {
+    "id": "off-02",
+    "title": "Happy Hour Cocktails",
+    "description": "Signature cocktails at a reduced pour price between 5 and 7 pm. Golden Hour Old Fashioned included.",
+    "discount": "2 for 1",
+    "code": "GOLDENHOUR",
+    "validUntil": "2026-09-30",
+    "tag": "Evenings"
+  },
+  {
+    "id": "off-03",
+    "title": "First Order Online",
+    "description": "New to ordering online? Enjoy a welcome discount on your very first Velora delivery or pickup.",
+    "discount": "15% OFF",
+    "code": "WELCOME15",
+    "validUntil": "2026-12-31",
+    "tag": "New guests"
+  },
+  {
+    "id": "off-04",
+    "title": "Birthday Dessert on Us",
+    "description": "Celebrating with us? Show a valid ID and enjoy a complimentary signature dessert on your birthday.",
+    "discount": "FREE DESSERT",
+    "code": "VELORABDAY",
+    "validUntil": "2026-12-31",
+    "tag": "Celebrations"
+  }
+]

@@ -12,3 +12,12 @@ export async function getMenuByCategory(
   const all = menuData as MenuItem[];
   return mockFetch(category === "all" ? all : all.filter((item) => item.category === category));
 }
+
+export async function getMenuItem(id: string): Promise<MenuItem | undefined> {
+  const item = (menuData as MenuItem[]).find((m) => m.id === id);
+  return mockFetch(item);
+}
+
+export function getMenuIds(): string[] {
+  return (menuData as MenuItem[]).map((m) => m.id);
+}

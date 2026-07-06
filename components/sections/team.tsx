@@ -27,7 +27,7 @@ export function Team({ members }: { members: TeamMember[] }) {
           {members.map((member) => (
             <motion.div key={member.id} variants={staggerItem} className="group text-center" data-cursor-hover>
               <div className="relative overflow-hidden rounded-2xl">
-                <MediaPlaceholder ratio="portrait" label={member.name} className="transition-transform duration-500 group-hover:scale-110" />
+                <MediaPlaceholder ratio="portrait" src={member.image} label={member.name} className="transition-transform duration-500 group-hover:scale-110" />
                 <div className="absolute inset-0 flex items-end justify-center gap-3 bg-black/40 pb-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   {member.social.instagram && (
                     <a href={member.social.instagram} aria-label="Instagram" className="text-white/90 hover:text-primary">

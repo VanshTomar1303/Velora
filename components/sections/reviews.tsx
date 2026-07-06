@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { FadeIn } from "@/components/animations/fade-in";
 import { StarRating } from "@/components/common/star-rating";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
 import type { Review } from "@/types/review";
 import { cn } from "@/lib/utils";
@@ -15,6 +15,7 @@ function ReviewCard({ review }: { review: Review }) {
       <p className="mt-4 text-sm text-foreground/90">&ldquo;{review.text}&rdquo;</p>
       <div className="mt-5 flex items-center gap-3">
         <Avatar>
+          {review.avatar && <AvatarImage src={review.avatar} alt={review.name} />}
           <AvatarFallback className="bg-primary/15 text-primary">
             {review.name.split(" ").map((n) => n[0]).join("")}
           </AvatarFallback>

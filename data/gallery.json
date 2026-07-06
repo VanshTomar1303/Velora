@@ -1,14 +1,14 @@
 [
-  { "id": "g-01", "type": "image", "title": "Interior ambience", "category": "interior", "width": 4, "height": 5 },
-  { "id": "g-02", "type": "video", "title": "Latte art in motion", "category": "coffee", "width": 4, "height": 3 },
-  { "id": "g-03", "type": "image", "title": "Signature dessert plating", "category": "food", "width": 3, "height": 4 },
-  { "id": "g-04", "type": "image", "title": "Golden hour terrace", "category": "interior", "width": 16, "height": 9 },
-  { "id": "g-05", "type": "image", "title": "Espresso bar counter", "category": "coffee", "width": 3, "height": 4 },
-  { "id": "g-06", "type": "video", "title": "Behind the bar", "category": "cocktails", "width": 9, "height": 16 },
-  { "id": "g-07", "type": "image", "title": "Evening lounge lighting", "category": "interior", "width": 4, "height": 5 },
-  { "id": "g-08", "type": "image", "title": "Chef's plating detail", "category": "food", "width": 4, "height": 3 },
-  { "id": "g-09", "type": "image", "title": "Private dining corner", "category": "interior", "width": 3, "height": 4 },
-  { "id": "g-10", "type": "video", "title": "Signature cocktail pour", "category": "cocktails", "width": 4, "height": 5 },
-  { "id": "g-11", "type": "image", "title": "Bakery display case", "category": "food", "width": 4, "height": 5 },
-  { "id": "g-12", "type": "image", "title": "Outdoor seating at dusk", "category": "interior", "width": 16, "height": 9 }
+  { "id": "g-01", "type": "image", "title": "Interior ambience", "category": "interior", "width": 4, "height": 5, "image": "/images/interior-1.jpg" },
+  { "id": "g-02", "type": "video", "title": "Latte art in motion", "category": "coffee", "width": 4, "height": 3, "image": "/images/gallery-video-1.jpg" },
+  { "id": "g-03", "type": "image", "title": "Signature dessert plating", "category": "food", "width": 3, "height": 4, "image": "/images/gallery-photo-3.jpg" },
+  { "id": "g-04", "type": "image", "title": "Golden hour terrace", "category": "interior", "width": 16, "height": 9, "image": "/images/exterior-1.jpg" },
+  { "id": "g-05", "type": "image", "title": "Espresso bar counter", "category": "coffee", "width": 3, "height": 4, "image": "/images/interior-2.jpg" },
+  { "id": "g-06", "type": "video", "title": "Behind the bar", "category": "cocktails", "width": 9, "height": 16, "image": "/images/gallery-video-6.jpg" },
+  { "id": "g-07", "type": "image", "title": "Evening lounge lighting", "category": "interior", "width": 4, "height": 5, "image": "/images/interior-3.jpg" },
+  { "id": "g-08", "type": "image", "title": "Chef's plating detail", "category": "food", "width": 4, "height": 3, "image": "/images/gallery-photo-2.jpg" },
+  { "id": "g-09", "type": "image", "title": "Private dining corner", "category": "interior", "width": 3, "height": 4, "image": "/images/interior-4.jpg" },
+  { "id": "g-10", "type": "video", "title": "Signature cocktail pour", "category": "cocktails", "width": 4, "height": 5, "image": "/images/gallery-video-4.jpg" },
+  { "id": "g-11", "type": "image", "title": "Bakery display case", "category": "food", "width": 4, "height": 5, "image": "/images/menu-croissant.jpg" },
+  { "id": "g-12", "type": "image", "title": "Outdoor seating at dusk", "category": "interior", "width": 16, "height": 9, "image": "/images/exterior-2.jpg" }
 ]

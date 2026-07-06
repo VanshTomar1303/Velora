@@ -24,3 +24,30 @@ export type ContactFormValues = z.infer<typeof contactSchema>;
 export const newsletterSchema = z.object({
   email: z.string().email("Please enter a valid email"),
 });
+
+export const feedbackSchema = z.object({
+  name: z.string().min(2, "Please enter your name"),
+  email: z.string().email("Please enter a valid email"),
+  rating: z.number().int().min(1, "Please select a rating").max(5),
+  comment: z.string().min(10, "Please share at least a few words"),
+});
+
+export type FeedbackFormValues = z.infer<typeof feedbackSchema>;
+
+export const referralSchema = z.object({
+  name: z.string().min(2, "Please enter your name"),
+  email: z.string().email("Please enter a valid email"),
+  friendEmail: z.string().email("Please enter your friend's email"),
+});
+
+export type ReferralFormValues = z.infer<typeof referralSchema>;
+
+export const partnershipSchema = z.object({
+  company: z.string().min(2, "Please enter your company name"),
+  contact: z.string().min(2, "Please enter a contact name"),
+  email: z.string().email("Please enter a valid email"),
+  type: z.string().min(1, "Please choose a partnership type"),
+  message: z.string().min(10, "Please tell us a little more"),
+});
+
+export type PartnershipFormValues = z.infer<typeof partnershipSchema>;

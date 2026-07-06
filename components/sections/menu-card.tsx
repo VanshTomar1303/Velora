@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Heart, Plus, Check } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import type { MenuItem } from "@/types/menu";
 import { MediaPlaceholder } from "@/components/common/media-placeholder";
 import { Button } from "@/components/ui/button";
@@ -33,7 +34,9 @@ export function MenuCard({ item }: { item: MenuItem }) {
       className="group relative overflow-hidden rounded-2xl border border-border bg-card"
     >
       <div className="relative">
-        <MediaPlaceholder ratio="landscape" label={item.name} className="rounded-none transition-transform duration-500 group-hover:scale-105" />
+        <Link href={`/menu/${item.id}`} aria-label={item.name} data-cursor-hover>
+          <MediaPlaceholder ratio="landscape" src={item.image} label={item.name} className="rounded-none transition-transform duration-500 group-hover:scale-105" />
+        </Link>
         <button
           onClick={() => setFavorite((f) => !f)}
           aria-label="Toggle favorite"
@@ -51,7 +54,11 @@ export function MenuCard({ item }: { item: MenuItem }) {
 
       <div className="p-5">
         <div className="flex items-start justify-between gap-2">
-          <h3 className="font-display text-lg leading-tight">{item.name}</h3>
+          <h3 className="font-display text-lg leading-tight">
+            <Link href={`/menu/${item.id}`} className="transition-colors hover:text-primary" data-cursor-hover>
+              {item.name}
+            </Link>
+          </h3>
           <span className="whitespace-nowrap font-semibold text-primary">{formatCurrency(item.price)}</span>
         </div>
         <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">{item.description}</p>

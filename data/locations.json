@@ -1,0 +1,63 @@
+[
+  {
+    "id": "loc-sf",
+    "city": "San Francisco",
+    "address": "128 Marigold Avenue, San Francisco, CA 94110",
+    "phone": "+1 (415) 555-0192",
+    "hours": "8:00 AM – 12:00 AM",
+    "mapLat": 37.7599,
+    "mapLng": -122.4148,
+    "flagship": true,
+    "image": "/images/exterior-1.jpg"
+  },
+  {
+    "id": "loc-ny",
+    "city": "New York",
+    "address": "540 Grand Street, New York, NY 10002",
+    "phone": "+1 (212) 555-0173",
+    "hours": "7:30 AM – 11:00 PM",
+    "mapLat": 40.7156,
+    "mapLng": -73.9822,
+    "image": "/images/exterior-2.jpg"
+  },
+  {
+    "id": "loc-la",
+    "city": "Los Angeles",
+    "address": "8021 Melrose Avenue, Los Angeles, CA 90046",
+    "phone": "+1 (323) 555-0148",
+    "hours": "8:00 AM – 11:00 PM",
+    "mapLat": 34.0839,
+    "mapLng": -118.3651,
+    "image": "/images/exterior-3.jpg"
+  },
+  {
+    "id": "loc-ldn",
+    "city": "London",
+    "address": "22 Redchurch Street, Shoreditch, London E2 7DP",
+    "phone": "+44 20 7946 0325",
+    "hours": "8:00 AM – 11:00 PM",
+    "mapLat": 51.5241,
+    "mapLng": -0.0736,
+    "image": "/images/exterior-4.jpg"
+  },
+  {
+    "id": "loc-tyo",
+    "city": "Tokyo",
+    "address": "3-8-12 Jingumae, Shibuya City, Tokyo 150-0001",
+    "phone": "+81 3 6427 5580",
+    "hours": "9:00 AM – 10:00 PM",
+    "mapLat": 35.6693,
+    "mapLng": 139.7065,
+    "image": "/images/interior-1.jpg"
+  },
+  {
+    "id": "loc-par",
+    "city": "Paris",
+    "address": "14 Rue de Charonne, 75011 Paris",
+    "phone": "+33 1 43 55 08 27",
+    "hours": "8:00 AM – 11:00 PM",
+    "mapLat": 48.8536,
+    "mapLng": 2.3757,
+    "image": "/images/interior-3.jpg"
+  }
+]

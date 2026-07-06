@@ -50,6 +50,6 @@ export const useCartStore = create<CartState>()(
       close: () => set({ isOpen: false }),
       toggle: () => set((state) => ({ isOpen: !state.isOpen })),
     }),
-    { name: "velora-cart" }
+    { name: "velora-cart", skipHydration: true }
   )
 );

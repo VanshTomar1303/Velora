@@ -13,17 +13,48 @@ import { newsletterSchema } from "@/lib/validations";
 import { getSettingsSync } from "@/lib/api/settings";
 import { z } from "zod";
 
-const QUICK_LINKS = [
-  { href: "/menu", key: "menu" },
-  { href: "/gallery", key: "gallery" },
-  { href: "/about", key: "about" },
-  { href: "/reservations", key: "reservations" },
-  { href: "/contact", key: "contact" },
+const INSTAGRAM_PREVIEW = [
+  "/images/lifestyle-1.jpg",
+  "/images/lifestyle-2.jpg",
+  "/images/lifestyle-3.jpg",
+  "/images/lifestyle-4.jpg",
+  "/images/event-1.jpg",
+  "/images/event-2.jpg",
+];
+
+const LINK_COLUMNS = [
+  {
+    heading: "explore",
+    links: [
+      { href: "/menu", key: "menu" },
+      { href: "/gallery", key: "gallery" },
+      { href: "/blog", key: "blog" },
+      { href: "/feedback", key: "testimonials" },
+      { href: "/locations", key: "locations" },
+    ],
+  },
+  {
+    heading: "company",
+    links: [
+      { href: "/offers", key: "offers" },
+      { href: "/referral", key: "referral" },
+      { href: "/partners", key: "partners" },
+      { href: "/about", key: "about" },
+      { href: "/contact", key: "contact" },
+    ],
+  },
+  {
+    heading: "legal",
+    links: [
+      { href: "/privacy", key: "privacy" },
+      { href: "/cookies", key: "cookies" },
+      { href: "/terms", key: "terms" },
+    ],
+  },
 ] as const;
 
 export function Footer() {
   const t = useTranslations("footer");
-  const tNav = useTranslations("nav");
   const settings = getSettingsSync();
 
   const form = useForm<z.infer<typeof newsletterSchema>>({
@@ -39,8 +70,8 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-secondary/30">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-12 lg:grid-cols-4">
-          <div>
+        <div className="grid gap-12 lg:grid-cols-6">
+          <div className="lg:col-span-2">
             <span className="font-display text-2xl tracking-[0.15em]">VELORA</span>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">{settings.description}</p>
             <div className="mt-6 flex items-center gap-3">
@@ -63,29 +94,29 @@ export function Footer() {
                 </a>
               ))}
             </div>
-          </div>
-
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">{t("quickLinks")}</h3>
-            <ul className="mt-4 space-y-3">
-              {QUICK_LINKS.map((link) => (
-                <li key={link.key}>
-                  <Link href={link.href} className="text-sm transition-colors hover:text-primary">
-                    {tNav(link.key)}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">{t("instagram")}</h3>
-            <div className="mt-4 grid grid-cols-3 gap-2">
-              {Array.from({ length: 6 }).map((_, i) => (
-                <MediaPlaceholder key={i} ratio="square" className="rounded-md" />
+            <div className="mt-6 grid max-w-xs grid-cols-3 gap-2">
+              {INSTAGRAM_PREVIEW.map((src) => (
+                <MediaPlaceholder key={src} ratio="square" src={src} className="rounded-md" />
               ))}
             </div>
           </div>
+
+          {LINK_COLUMNS.map((column) => (
+            <div key={column.heading}>
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                {t(`columns.${column.heading}`)}
+              </h3>
+              <ul className="mt-4 space-y-3">
+                {column.links.map((link) => (
+                  <li key={link.key}>
+                    <Link href={link.href} className="text-sm transition-colors hover:text-primary">
+                      {t(`links.${link.key}`)}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">{t("newsletter")}</h3>

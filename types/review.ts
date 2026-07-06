@@ -3,6 +3,7 @@ export interface Review {
   name: string;
   country: string;
   rating: number;
+  avatar?: string;
   text: string;
   date: string;
 }

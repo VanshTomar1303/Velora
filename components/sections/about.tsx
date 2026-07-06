@@ -28,7 +28,7 @@ export function About() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
           <ParallaxImage className="rounded-2xl">
-            <MediaPlaceholder ratio="portrait" label="Founders in the original cafe" className="h-full rounded-2xl" />
+            <MediaPlaceholder ratio="portrait" src="/images/about-1.jpg" label="Founders in the original cafe" className="h-full rounded-2xl" />
           </ParallaxImage>
 
           <div>

@@ -5,4 +5,5 @@ export interface GalleryItem {
   category: string;
   width: number;
   height: number;
+  image?: string;
 }
